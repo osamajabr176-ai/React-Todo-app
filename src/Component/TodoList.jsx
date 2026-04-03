@@ -8,7 +8,7 @@ import { useTodos,useTodosDispatch } from "../contexts/todosContext";
 function TodoList() {
 
 
-  const  todos  = useTodos();
+  const  {todos}  = useTodos();
   const  dispatch  = useTodosDispatch();
   const { showToast } = useToast();
   const [selectedTodo, setSelectedTodo] = useState(null);
